@@ -5,7 +5,7 @@
       <div class="col-12 grid-margin">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title mb-4">Project</h5>
+            <h5 class="card-title mb-4">My Projects</h5>
             <div class="table-responsive">
               <table class="table center-aligned-table">
                 <thead>

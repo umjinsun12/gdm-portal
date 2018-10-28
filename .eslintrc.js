@@ -1,4 +1,5 @@
 // https://eslint.org/docs/user-guide/configuring
+/* eslint-disable */
 
 module.exports = {
   root: true,

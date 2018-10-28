@@ -27,6 +27,9 @@ export default {
             data: [0, 214, 9, 0]
           }
       ]
-    }, {responsive: true, maintainAspectRatio: false})
+    }, {
+      responsive: true, 
+      maintainAspectRatio: false,
+    })
   }
 }

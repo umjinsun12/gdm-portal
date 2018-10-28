@@ -126,6 +126,11 @@
             font-weight: 500;
           }
 
+
+          .projectbtn{
+            margin-top : 10px;
+          }
+
           .name {
             color: $sidebar-light-profile-name-color;
           }
@@ -134,6 +139,7 @@
             color: $sidebar-light-profile-title-color;
             font-size: 0.75rem;
           }
+
         }
 
         i {

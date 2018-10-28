@@ -26,6 +26,8 @@ import tooltips from '../views/ui-components/tooltips'
 import casereview from '../views/pages/case-review'
 import casereviewdetail from '../views/pages/case-review-detail'
 import project from '../views/pages/project'
+import groups from '../views/pages/groups'
+import querybuiler from '../views/pages/query-builder'
 
 // Form Components
 import forms from '../views/forms/forms'
@@ -160,5 +162,16 @@ export default new Router({
     path: '/project',
     name : 'project',
     component: project
-  }]
+  },
+  {
+    path: '/groups',
+    name : 'groups',
+    component: groups
+  },
+  {
+    path : '/querybuiler',
+    name : 'querybuiler',
+    component : querybuiler
+  }
+]
 })

@@ -5,9 +5,43 @@
       <ul class="nav">
         <li class="nav-item nav-profile">
           <div class="nav-link">
+            <div class="profile-image"> <img src="../../assets/images/faces/basic-profile.jpg" alt="image"/> <span class="online-status online"></span> </div>
             <div class="profile-name">
               <p class="name">엄진섭</p>
               <p class="designation">Manager</p>
+              <b-button v-b-modal.createmd class="projectbtn"  variant="success">New Project +</b-button>
+              <b-modal id="createmd" title="Create New Project" size="md">
+                    <h5 class="card-title border-bottom">Protein Alteration Details</h5>
+                    <div class="row margin-bottom">
+                    <p class="card-description text-primary col-md-6">
+                      HGVS Protein Change
+                    </p>
+                    <p class="card-description col-md-6">
+                      NP_004295.2:p.W915G
+                    </p>
+                    </div>
+
+                    <h5 class="card-title border-bottom">Transcript Alteration Details</h5>
+                    <div class="row">
+                    <p class="card-description text-primary col-md-6">
+                      HGVS Transcript Change
+                    </p>
+                    <p class="card-description col-md-6">
+                      NM_004304.4:c.2743T>G
+                    </p>
+                    </div>
+                    <h5 class="card-title border-bottom">Genomic Alteration Details</h5>
+                    <div class="row">
+                    <p class="card-description text-primary col-md-6">
+                      Allelic State
+                    </p>
+                    <p class="card-description col-md-6">
+                      Hemizygous
+                    </p>
+                    </div>
+                    <h5 class="card-title border-bottom">Conservation Score</h5>
+                    <b-table striped hover responsive :items="tableitem"></b-table>
+                </b-modal>
             </div>
           </div>
         </li>
@@ -48,9 +82,8 @@
           </b-collapse>
         </li>-->
         <!--<li class="nav-item"><router-link class="nav-link" to="/tables/"><img class="menu-icon" src="../../assets/images/menu_icons/06.png" alt="menu icon"><span class="menu-title">Tables</span></router-link></li>-->
-        <!--<li class="nav-item"><router-link class="nav-link" to="/icons/"><img class="menu-icon" src="../../assets/images/menu_icons/07.png" alt="menu icon"><span class="menu-title">Icons</span></router-link></li>-->
-        <!--<li class="nav-item"><router-link class="nav-link" to="/forms/"><img class="menu-icon" src="../../assets/images/menu_icons/04.png" alt="menu icon"><span class="menu-title">Forms</span></router-link></li>-->
-        <li class="nav-item"><router-link class="nav-link" to="/project/"><img class="menu-icon" src="../../assets/images/menu_icons/03.png" alt="menu icon"><span class="menu-title">Projects</span></router-link></li>
+        <li class="nav-item"><router-link class="nav-link" to="/groups/"><img class="menu-icon" src="../../assets/images/menu_icons/02.png" alt="menu icon"><span class="menu-title">Project Groups</span></router-link></li>
+        <li class="nav-item"><router-link class="nav-link" to="/querybuiler/"><img class="menu-icon" src="../../assets/images/menu_icons/07.png" alt="menu icon"><span class="menu-title">Query Builder</span></router-link></li>
         <li class="nav-item"><router-link class="nav-link" to="/casereview/"><img class="menu-icon" src="../../assets/images/menu_icons/04.png" alt="menu icon"><span class="menu-title">Case Review</span></router-link></li>
         <!--<li class="nav-item"><router-link class="nav-link" to="/casereview/"><img class="menu-icon" src="../../assets/images/menu_icons/04.png" alt="menu icon"><span class="menu-title">Case Review Detail</span></router-link></li>-->
       </ul>
@@ -67,6 +100,8 @@ export default {
 
 <style scoped lang="scss">
 .app-sidebar {
+
+
 
 }
 </style>
